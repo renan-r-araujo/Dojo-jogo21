@@ -1,0 +1,9 @@
+1382208307200	Convert local variable 'carta' to field
+1382208364310	Rename method 'test'
+1382209258270	Rename field 'estado'
+1382209301958	Rename field 'status'
+1382210107162	Extract method 'criaString'
+1382210283400	Extract method 'stringValor'
+1382211516453	Move compilation unit
+1382212854331	Extract method 'criaCartasPorNaipe'
+1382212919595	Rename method 'criaCartasPorNaipe'

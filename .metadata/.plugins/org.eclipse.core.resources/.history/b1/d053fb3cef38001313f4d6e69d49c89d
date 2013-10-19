@@ -1,0 +1,17 @@
+package com.jogocartas.testes;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.jogocartas.classes.Carta;
+
+public class TesteCarta {
+
+	@Test
+	public void test() {
+		Carta carta = new Carta(1);
+		assertEquals(1,carta.getValor());
+	}
+
+}

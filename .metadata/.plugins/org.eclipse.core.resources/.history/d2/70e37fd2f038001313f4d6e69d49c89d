@@ -1,0 +1,23 @@
+package com.jogocartas.classes;
+
+public class Carta {
+
+	private int valor;
+	private NAIPE naipe;
+	
+	public Carta(int valor, NAIPE naipe){
+		this.valor = valor;
+		this.naipe = naipe;
+	}
+
+	public int getValor() {
+		return valor;
+	}
+
+	public NAIPE getNaipe() {
+		return naipe;
+	}
+	
+	
+
+}
