@@ -15,8 +15,6 @@ public class Baralho implements JogoDeCartas {
 		criaCartasPor(NAIPE.OUROS);
 		criaCartasPor(NAIPE.PAUS);
 			
-		/*Pega o ArrayList e na primeira posição, 
-		que é azero ele coloca uma nova carta.*/
 	}
 
 	private void criaCartasPor(NAIPE naipe) {
@@ -29,13 +27,11 @@ public class Baralho implements JogoDeCartas {
 	
 
 	@Override
-	public void ordenar() {
-				
+	public void ordenar() {				
 	}
 
 	@Override
-	public void embaralhar() {
-				
+	public void embaralhar() {				
 	}
 
 	@Override
@@ -45,11 +41,19 @@ public class Baralho implements JogoDeCartas {
 
 	@Override
 	public String listarBaralho() {
-		return null;
+		String baralhoListado = "";
+		for (int i = 0; i < baralho.size(); i++) {
+			baralhoListado += baralho.get(i).toString() + ", ";
+		}
+		return baralhoListado;
 	}
 
 	public Carta getCarta(int i) {
 		return baralho.get(i);
+	}
+
+	public int getQtCartas() {
+		return qtCartas;
 	}
 	
 	

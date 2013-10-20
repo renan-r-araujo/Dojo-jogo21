@@ -1,0 +1,58 @@
+package com.jogocartas.classes;
+
+import java.util.ArrayList;
+
+public class Baralho implements JogoDeCartas {
+	
+	ArrayList<Carta> baralho;
+	private int qtCartas = 0;
+	
+	public Baralho(){
+		baralho = new ArrayList<>();
+		
+		criaCartasPor(NAIPE.COPAS);
+		criaCartasPor(NAIPE.ESPADAS);
+		criaCartasPor(NAIPE.OUROS);
+		criaCartasPor(NAIPE.PAUS);
+			
+	}
+
+	private void criaCartasPor(NAIPE naipe) {
+		for (int i = 1; i < 14; i++) {
+			baralho.add(qtCartas ,new Carta(i,naipe));
+			qtCartas++;
+		}
+	}
+	
+	
+
+	@Override
+	public void ordenar() {				
+	}
+
+	@Override
+	public void embaralhar() {
+				
+	}
+
+	@Override
+	public Carta darCartas() {
+		return null;
+	}
+
+	@Override
+	public String listarBaralho() {
+		return null;
+	}
+
+	public Carta getCarta(int i) {
+		return baralho.get(i);
+	}
+
+	public int getQtCartas() {
+		return qtCartas;
+	}
+	
+	
+
+}

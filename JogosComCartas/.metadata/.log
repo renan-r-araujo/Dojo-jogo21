@@ -1,0 +1,17 @@
+!SESSION 2013-10-19 19:30:55.333 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.7.0_10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Command-line arguments:  -data C:\Users\Renan\Documents\GitHub\Dojo-jogo21\JogosComCartas -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui.ide 4 4 2013-10-19 19:32:56.432
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2013-10-19 19:32:56.441
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-10-19 19:32:56.441
+!MESSAGE The project description file (.project) for 'JogosComCartas' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.ui 2 2 2013-10-19 19:32:56.482
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
