@@ -41,11 +41,11 @@ public class Baralho implements JogoDeCartas {
 
 	@Override
 	public String listarBaralho() {
-		String baralhoListado = "";
-		for (int i = 0; i < baralho.size(); i++) {
-			baralhoListado += baralho.get(i).toString() + ", ";
+		StringBuilder baralhoListado = new StringBuilder();
+		for (Carta carta : baralho) {
+			baralhoListado.append(carta.toString() + "\n");
 		}
-		return baralhoListado;
+		return baralhoListado.toString();
 	}
 
 	public Carta getCarta(int i) {
