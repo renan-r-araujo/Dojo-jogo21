@@ -25,8 +25,5 @@ public class TesteBaralho {
 		assertEquals(GeradorStringEsperada.baralhoOrdenado(),baralho.listarBaralho());
 	}
 	
-//	@Test
-//	public void testOrdenarBaralho(){
-//		asssertEquals()
-//	}
+
 }

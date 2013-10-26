@@ -1,7 +1,5 @@
 package com.jogocartas.testes;
 
-import java.io.ObjectInputStream.GetField;
-
 import com.jogocartas.classes.NAIPE;
 
 public class GeradorStringEsperada {
@@ -18,13 +16,15 @@ public class GeradorStringEsperada {
 		return retorno.toString();
 	}
 
+	
+	//Consertar A geração de String
+	//Para Adicionar o As, Valete, Dama Reis.
 	private static String getCartasDo(NAIPE naipe) {
 		StringBuilder retorno = new StringBuilder();
 		for (int i = 1; i < 14; i++) {
 			retorno.append(i + " de " + naipe.toString() + "\n");
 		}
 		return retorno.toString();
-
 	}
 
 }
