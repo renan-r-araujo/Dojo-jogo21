@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteCarta" project="JogosComCartas" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.jogocartas.testes.TesteCarta" time="0.0">
-    <testcase name="testGetNaipe" classname="com.jogocartas.testes.TesteCarta" time="0.0"/>
-    <testcase name="testGetValor" classname="com.jogocartas.testes.TesteCarta" time="0.0"/>
-  </testsuite>
-</testrun>

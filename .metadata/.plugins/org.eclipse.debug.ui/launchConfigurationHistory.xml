@@ -4,10 +4,6 @@
 <mruHistory/>
 <favorites/>
 </launchGroup>
-<launchGroup id="org.hibernate.eclipse.launch.CodeGenerationLaunchGroup">
-<mruHistory/>
-<favorites/>
-</launchGroup>
 <launchGroup id="com.mountainminds.eclemma.ui.launchGroup.coverage">
 <mruHistory>
 <launch memento="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;launchConfiguration local=&quot;true&quot; path=&quot;com.jogocartas.testes&quot;/&gt;&#13;&#10;"/>
@@ -20,10 +16,6 @@
 <favorites/>
 </launchGroup>
 <launchGroup id="org.eclipse.debug.ui.launchGroup.profile">
-<mruHistory/>
-<favorites/>
-</launchGroup>
-<launchGroup id="org.hibernate.eclipse.launch.ConsoleConfigurationLaunchGroup">
 <mruHistory/>
 <favorites/>
 </launchGroup>

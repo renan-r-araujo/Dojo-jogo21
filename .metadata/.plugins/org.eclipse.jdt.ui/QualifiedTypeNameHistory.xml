@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.jogocartas.testes.GeradorStringEsperada"/>
+<fullyQualifiedTypeName name="com.jogocartas.classes.Carta"/>
+<fullyQualifiedTypeName name="com.jogocartas.classes.NAIPE"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+</qualifiedTypeNameHistroy>
