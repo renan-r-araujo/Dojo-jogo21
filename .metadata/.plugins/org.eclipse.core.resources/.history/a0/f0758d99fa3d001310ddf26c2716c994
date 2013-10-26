@@ -32,11 +32,5 @@ public class TesteBaralho {
 		System.out.println(baralho.listarBaralho());
 	}
 	
-	@Test
-	public void testOrdenarBaralho(){
-		baralho.embaralhar();
-		baralho.ordenar();
-		assertEquals(GeradorStringEsperada.baralhoOrdenado(), baralho.listarBaralho());
-	}
 
 }
