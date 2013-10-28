@@ -1,6 +1,0 @@
-package com.jogocartas.classes;
-
-public enum NAIPE {
-	COPAS, ESPADAS, OUROS, PAUS
-
-}

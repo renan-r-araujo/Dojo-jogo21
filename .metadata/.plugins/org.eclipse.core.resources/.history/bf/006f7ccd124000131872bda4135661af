@@ -36,7 +36,6 @@ public class TesteBaralho {
 	public void testOrdenarBaralho(){
 		baralho.embaralhar();
 		baralho.ordenar();
-		
 		assertEquals(GeradorStringEsperada.baralhoOrdenado(), baralho.listarBaralho());
 	}
 
