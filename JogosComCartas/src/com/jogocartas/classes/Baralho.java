@@ -27,33 +27,55 @@ public class Baralho implements JogoDeCartas {
 
 	@Override
 	public void ordenar() {
-		ArrayList<Carta> baralhoCopas = new ArrayList<>();
-		ArrayList<Carta> baralhoEspadas = new ArrayList<>();
-		ArrayList<Carta> baralhoOuros = new ArrayList<>();
-		ArrayList<Carta> baralhoPaus = new ArrayList<>();
+		ArrayList<Carta> baralhoDeCopas = new ArrayList<>();
+		ArrayList<Carta> baralhoDeEspadas = new ArrayList<>();
+		ArrayList<Carta> baralhoDeOuros = new ArrayList<>();
+		ArrayList<Carta> baralhoDePaus = new ArrayList<>();
+		
+		separaEm(baralhoDeCopas, baralhoDeEspadas, baralhoDeOuros, baralhoDePaus);	
+		
+		ordena(baralhoDeCopas, baralhoDeEspadas, baralhoDeOuros, baralhoDePaus);
+		
+		baralho.clear();
+		
+		junta(baralhoDeCopas, baralhoDeEspadas, baralhoDeOuros, baralhoDePaus);
+	}
+
+	private void junta(ArrayList<Carta> baralhoCopas,
+			ArrayList<Carta> baralhoEspadas, ArrayList<Carta> baralhoOuros,
+			ArrayList<Carta> baralhoPaus) {
+		baralho.addAll(baralhoCopas);
+		baralho.addAll(baralhoEspadas);
+		baralho.addAll(baralhoOuros);
+		baralho.addAll(baralhoPaus);
+	}
+
+	private void ordena(ArrayList<Carta> baralhoCopas,
+			ArrayList<Carta> baralhoEspadas, ArrayList<Carta> baralhoOuros,
+			ArrayList<Carta> baralhoPaus) {
+		Collections.sort(baralhoCopas);
+		Collections.sort(baralhoEspadas);
+		Collections.sort(baralhoOuros);
+		Collections.sort(baralhoPaus);
+	}
+
+	private void separaEm(ArrayList<Carta> baralhoCopas,
+			ArrayList<Carta> baralhoEspadas, ArrayList<Carta> baralhoOuros,
+			ArrayList<Carta> baralhoPaus) {
 		for (Carta carta : baralho) {
 			if(carta.getNaipe()==NAIPE.COPAS){
 				baralhoCopas.add(carta);				
 			}
 			else if(carta.getNaipe()==NAIPE.ESPADAS){
-				baralhoCopas.add(carta);				
+				baralhoEspadas.add(carta);				
 			}
 			else if(carta.getNaipe()==NAIPE.OUROS){
-				baralhoCopas.add(carta);				
+				baralhoOuros.add(carta);				
 			}
 			else if(carta.getNaipe()==NAIPE.PAUS){
-				baralhoCopas.add(carta);				
+				baralhoPaus.add(carta);				
 			}
-		}	
-		baralho.clear();
-		Collections.sort(baralhoCopas);
-		Collections.sort(baralhoEspadas);
-		Collections.sort(baralhoOuros);
-		Collections.sort(baralhoPaus);
-		baralho.addAll(baralhoCopas);
-		baralho.addAll(baralhoEspadas);
-		baralho.addAll(baralhoOuros);
-		baralho.addAll(baralhoPaus);
+		}
 	}
 
 	@Override

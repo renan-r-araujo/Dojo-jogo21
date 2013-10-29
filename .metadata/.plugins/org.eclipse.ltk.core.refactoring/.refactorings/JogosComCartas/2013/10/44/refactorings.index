@@ -1,0 +1,7 @@
+1383019415226	Extract method 'separaEm'
+1383019444274	Extract method 'ordena'
+1383019478263	Extract method 'junta'
+1383019498407	Rename local variable 'baralhoCopas'
+1383019508936	Rename local variable 'baralhoEspadas'
+1383019519481	Rename local variable 'baralhoOuros'
+1383019540033	Rename local variable 'baralhoPaus'

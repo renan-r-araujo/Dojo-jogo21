@@ -29,14 +29,12 @@ public class TesteBaralho {
 	public void testListarBaralhoEmbaralhado(){
 		baralho.embaralhar();
 		assertFalse(baralho.listarBaralho().equals(GeradorStringEsperada.baralhoOrdenado()));
-		System.out.println(baralho.listarBaralho());
 	}
 	
 	@Test
 	public void testOrdenarBaralho(){
 		baralho.embaralhar();
-		baralho.ordenar();
-		
+		baralho.ordenar();		
 		assertEquals(GeradorStringEsperada.baralhoOrdenado(), baralho.listarBaralho());
 	}
 
